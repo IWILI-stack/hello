@@ -1,111 +1,99 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMEKA - Portal Monitoring & Evaluasi Kinerja</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-    </style>
-</head>
-<body class="bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 min-h-screen flex flex-col justify-between text-slate-800 antialiased relative overflow-x-hidden">
-
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
-
-    <header class="w-full max-w-5xl mx-auto px-6 pt-12 pb-6 text-center z-10">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300 text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
-            Dinas Kesehatan Kabupaten Kudus
-        </div>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-            SIMEKA PORTAL
-        </h1>
-        <p class="text-slate-300 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-            Digitalisasi Integrasi Data Monitoring, Evaluasi Kinerja, dan Anggaran Terpadu.
-        </p>
-    </header>
-
-    <main class="w-full max-w-4xl mx-auto px-6 py-8 flex-grow z-10">
-        
-        <div class="glass-card rounded-2xl p-4 mb-8 text-slate-700 shadow-xl flex items-center justify-between border-l-4 border-l-teal-500">
-            <div class="flex items-center gap-3">
-                <div class="p-2.5 bg-teal-500/10 text-teal-600 rounded-xl">
-                    <i class="fa-solid fa-chart-line text-lg"></i>
-                </div>
-                <div>
-                    <h2 class="text-sm font-bold text-slate-900">Akses Tahun Anggaran</h2>
-                    <p class="text-xs text-slate-500">Pilih periode pelaporan atau arsip data yang ingin dibuka</p>
-                </div>
-            </div>
-            <span class="hidden sm:inline-block text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-600 rounded-lg">
-                Sistem Aktif
-            </span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            <a href="https://datastudio.google.com/u/0/reporting/570120cf-4bca-45e4-b05e-d5e993a2362e" target="_blank" rel="noopener noreferrer" 
-               class="group glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-slate-100 group-hover:bg-teal-500 group-hover:text-white text-slate-700 flex items-center justify-center transition-colors duration-300">
-                            <i class="fa-solid fa-folder-open text-xl"></i>
-                        </div>
-                        <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">Arsip Data</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">SIMEKA 2025</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">
-                        Akses dokumen monitoring, evaluasi kinerja, dan rekapitulasi anggaran tahun anggaran 2025.
-                    </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-semibold text-teal-600">
-                    <span>Buka Aplikasi</span>
-                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
-
-            <a href="https://datastudio.google.com/u/0/reporting/f7f225f7-78a6-49d3-bdea-6c08ccf0d604" target="_blank" rel="noopener noreferrer" 
-               class="group glass-card rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between ring-2 ring-teal-500/50">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center shadow-md shadow-teal-500/20">
-                            <i class="fa-solid fa-chart-pie text-xl"></i>
-                        </div>
-                        <span class="text-xs font-semibold text-teal-700 bg-teal-100 px-2.5 py-1 rounded-full">Tahun Berjalan</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">SIMEKA 2026</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-6">
-                        Portal utama penginputan, pemantauan kinerja, serta realisasi anggaran aktif untuk periode 2026.
-                    </p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-semibold text-teal-600">
-                    <span>Buka Aplikasi Utama</span>
-                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
-
-        </div>
-
-        <div class="mt-8 p-4 rounded-xl bg-slate-800/40 border border-slate-700/50 backdrop-blur-md text-slate-300 text-xs text-center">
-            <p><i class="fa-solid fa-circle-info text-teal-400 mr-2"></i>Pastikan Anda terhubung ke jaringan dinas atau menggunakan akun terverifikasi untuk penginputan data.</p>
-        </div>
-
-    </main>
-
-    <footer class="w-full text-center py-6 text-xs text-slate-400 border-t border-slate-800/60 z-10">
-        <p>&copy; 2026 Dinas Kesehatan Kabupaten Kudus. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>Dashboard Realisasi Anggaran Dinkes Kudus 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#0f172a;--mute:#64748b;--line:#e2e8f0;--a:#0f766e;--b:#d97706;--c:#dc2626;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--card:#131c2e;--ink:#e5e7eb;--mute:#94a3b8;--line:#243049;--a:#2dd4bf;--b:#fbbf24;--c:#f87171}}
+:root[data-theme="dark"]{--bg:#0b1220;--card:#131c2e;--ink:#e5e7eb;--mute:#94a3b8;--line:#243049;--a:#2dd4bf;--b:#fbbf24;--c:#f87171}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:1280px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:22px;margin:0}h2{font-size:15px;margin:0 0 10px}.sub{color:var(--mute);font-size:13px}
+.hd{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-bottom:16px}
+.g{display:grid;gap:14px;margin-bottom:14px}.k{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.c2{grid-template-columns:repeat(auto-fit,minmax(380px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.kv{font-size:24px;font-weight:700;margin:2px 0}.kl{color:var(--mute);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.bar{height:8px;border-radius:6px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;background:var(--a)}
+.ch{position:relative;height:300px}.tb{display:flex;gap:6px;margin-bottom:8px}
+button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:5px 12px;border-radius:8px;cursor:pointer;font:inherit}button.on{background:var(--a);color:#fff;border-color:var(--a)}
+.ins li{margin:6px 0}.ins{padding-left:18px;margin:0}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--mute);font-weight:600}td.n{text-align:right;white-space:nowrap}
+.sc{overflow-x:auto}.chip{display:inline-block;padding:2px 9px;border-radius:99px;background:var(--bg);border:1px solid var(--line);margin:2px 4px 2px 0;font-size:12px}
+.f{color:var(--mute);font-size:12px;margin-top:18px}
+</style></head><body><div class="w">
+<div class="hd"><div><h1>Dashboard Realisasi Anggaran 2026</h1><div class="sub">Dinas Kesehatan, UPT Puskesmas, Labkesda &amp; RSUD · Kab. Kudus · data realisasi s.d. September 2026</div></div><div style="text-align:right"><div class="sub">M = miliar · jt = juta · T = triliun</div><div style="margin-top:6px"><input type="file" id="up" accept=".xlsx,.xlsm" hidden><button id="ub">⬆ Upload Excel untuk update data</button></div><div class="sub" id="st" style="margin-top:4px">Data bawaan: file per 30 Oktober 2026 · bisa juga drag &amp; drop file ke halaman</div></div></div>
+<div class="g k" id="kpi"></div>
+<div class="g c2"><div class="card"><h2>Insight Utama</h2><ul class="ins" id="ins"></ul></div>
+<div class="card"><h2>Serapan per Sumber Dana</h2><div class="ch"><canvas id="c1"></canvas></div></div></div>
+<div class="g c2"><div class="card"><h2>Realisasi Bulanan per Sumber &amp; Kumulatif</h2><div class="ch"><canvas id="c2"></canvas></div></div>
+<div class="card"><h2>Komposisi Realisasi per Entitas</h2><div class="ch"><canvas id="c3"></canvas></div></div></div>
+<div class="g c2"><div class="card"><h2>Persentase Serapan per Unit</h2><div class="tb"><button class="on" data-k="pusk">Puskesmas</button><button data-k="dkk">Bidang Dinkes</button></div><div class="ch" style="height:420px"><canvas id="c4"></canvas></div></div>
+<div class="card"><h2>Pendapatan Puskesmas: Target vs Realisasi</h2><div class="ch" style="height:420px"><canvas id="c5"></canvas></div></div></div>
+<div class="g c2"><div class="card"><h2>Realisasi JKN (Jaminan Kesehatan)</h2><div id="jkn"></div></div>
+<div class="card"><h2>Register SP2D per Bulan</h2><div id="chips"></div><div class="ch" style="height:240px"><canvas id="c6"></canvas></div></div></div>
+<div class="card sc"><h2>Realisasi SPM (Standar Pelayanan Minimal)</h2><table id="spm"></table></div>
+<div class="f">Sumber: file REALISASI_DINKES (PUSK &amp; LABKES) per 30 Oktober 2026. Sheet: REALISASI, REAL. PEND. &amp; PER SUMBER DANA, REG SP2D. Bulan tanpa realisasi tidak ditampilkan.</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+const D={"src": [{"n": "Pajak Rokok", "p": 26826686000, "r": 22895037745, "s": 3931648255}, {"n": "Dau Earn", "p": 16756522900, "r": 11140304084, "s": 5616218816}, {"n": "Dak Non Fisik", "p": 19564636050, "r": 13718886546, "s": 5845749504}, {"n": "Dau", "p": 102481362729, "r": 77768430427, "s": 24712932302}, {"n": "Dbhcht", "p": 72495271850, "r": 48257548283, "s": 24237723567}, {"n": "Pad", "p": 21694678358, "r": 15463227088, "s": 6231451270}, {"n": "Blud", "p": 441693293233, "r": 258662442922, "s": 183030850311}, {"n": "Lkb", "p": 18000000000, "r": 0, "s": 18000000000}], "tot": {"p": 719512451120, "r": 447905877095, "s": 271606574025}, "mon": {"DAU EARN": [1961937612, 828235310, 1339527672, 927111306, 2887908570, 537811360, 1491230781, 525848242, 640693231], "DAU": [5400888270, 7230013194, 13058964506, 7495132111, 7118135187, 13979488157, 7917242039, 8008630409, 7559936554], "DBHCHT": [80344035, 465025988, 370555733, 5812757207, 6592680987, 11185800313, 8598749798, 5781592128, 9370042094], "PAJAK ROKOK": [19868766, 76752735, 13385613007, 363862284, 454572601, 630948222, 6622812924, 444597306, 896009900], "DAK NON FISIK": [0, 280650550, 680663539, 1905568238, 803569060, 2247954191, 2591305459, 1483299872, 3725875637], "PAD": [0, 0, 4677861675, 1566837780, 1536284273, 3067992734, 1538535007, 1539452554, 1536263065], "BLUD": [10734064370, 21190335115, 34096590653, 24177447036, 35500665649, 36949289271, 16637909203, 43396616442, 35979525183], "LKB": [0, 0, 0, 0, 0, 0, 0, 0, 0]}, "dkk": [{"n": "Farmasi", "p": 11679223300, "r": 7444222230}, {"n": "Kesga Gizi", "p": 6420717700, "r": 4452670439}, {"n": "Kesling Kko", "p": 715748000, "r": 457017445}, {"n": "P2PM", "p": 4223944900, "r": 3518132571}, {"n": "PEPK", "p": 121433275827, "r": 92140857240}, {"n": "Promkes", "p": 1501543000, "r": 594430766}, {"n": "PTM", "p": 980150000, "r": 772168939}, {"n": "SDK MI", "p": 1661725600, "r": 1184772596}, {"n": "SI", "p": 621033000, "r": 342813932}, {"n": "UMPEG", "p": 4891193760, "r": 3252920991}, {"n": "YANKES", "p": 70707342500, "r": 51193292006}], "pusk": [{"n": "Bae", "p": 2423925319, "r": 1608372239}, {"n": "Dawe", "p": 5454006081, "r": 3612495698}, {"n": "Dersalam", "p": 3067010453, "r": 2081925785}, {"n": "Gondosari", "p": 3072379292, "r": 1973390295}, {"n": "Gribig", "p": 5252739923, "r": 2810239354}, {"n": "Jati", "p": 2799462802, "r": 1807374059}, {"n": "Jekulo", "p": 4949725561, "r": 3019969175}, {"n": "Jepang", "p": 4213702346, "r": 2860645976}, {"n": "Kaliwungu", "p": 5132185388, "r": 3296680216}, {"n": "Mejobo", "p": 3847342594, "r": 2458310645}, {"n": "Ngembal Kulon", "p": 2780793412, "r": 1644917552}, {"n": "Ngemplak", "p": 2901403195, "r": 1737786779}, {"n": "Purwosari", "p": 2403114254, "r": 1492724290}, {"n": "Rejosari", "p": 5149727282, "r": 3416166094}, {"n": "Rendeng", "p": 2022986542, "r": 1420585818}, {"n": "Sidorekso", "p": 3735935708, "r": 2383727675}, {"n": "Tanjungrejo", "p": 3790067155, "r": 2547959557}, {"n": "Undaan", "p": 5242054082, "r": 3320767188}, {"n": "Wergu Wetan", "p": 2267568289, "r": 1412301794}], "lab": {"n": "Uptd Laboratorium Kesehatan", "p": 2232819800, "r": 1734750090}, "rs": {"n": "Rsud Dr. Loekmono Hadi", "p": 421937604055, "r": 235911487661}, "jkn": [{"n": "Iuran PBPU & BP Kelas 3", "p": 50907360000, "r": 38472941000}, {"n": "Bantuan Iuran PBPU & BP Kelas 3", "p": 5488492800, "r": 4101591200}], "spm": [{"n": "Yankes Ibu Hamil", "p": 1844297700, "r": 1353730343}, {"n": "Yankes Ibu Bersalin", "p": 118116000, "r": 69288156}, {"n": "Yankes Bayi Baru Lahir", "p": 1970543700, "r": 814585195}, {"n": "Yankes Balita", "p": 747500000, "r": 219201746}, {"n": "Yankes Pada Usia Pendidikan", "p": 807357600, "r": 377029965}, {"n": "Yankes Pada Usia Produktif", "p": 360424000, "r": 310259994}, {"n": "Yankes Pada Usia Lanjut", "p": 35000000, "r": 5325700}, {"n": "Yankes Penderita Hipertensi", "p": 288450000, "r": 182999817}, {"n": "Yankes Penderita Diabetes", "p": 160766000, "r": 111562148}, {"n": "Yankes Orang dgn gangguan jiwa berat", "p": 125095000, "r": 96252500}, {"n": "Yankes orang terduga tuberkulosis", "p": 3446887900, "r": 3053012126}, {"n": "Yankes orang dg resiko terinfeksi virus yang melemahkan daya tahan manusia (HIV)", "p": 547451000, "r": 387238000}], "spmtot": {"p": 48501624900, "r": 35571902432}, "pend": [{"n": "Bae", "t": 1311480000, "r": 1044765621}, {"n": "Dawe", "t": 3716400000, "r": 2848813010}, {"n": "Dersalam", "t": 1323000000, "r": 1013959904}, {"n": "Gondosari", "t": 1675000000, "r": 1353578724}, {"n": "Gribig", "t": 3177300000, "r": 2450097736}, {"n": "Jati", "t": 1665325000, "r": 1328949968}, {"n": "Jekulo", "t": 3300000000, "r": 2464888567}, {"n": "Jepang", "t": 2762000000, "r": 2117468876}, {"n": "Kaliwungu", "t": 3455425000, "r": 2414398860}, {"n": "Mejobo", "t": 2762000000, "r": 2009995525}, {"n": "Ngembal Kulon", "t": 1445000000, "r": 1136124156}, {"n": "Ngemplak", "t": 1450000000, "r": 1121479607}, {"n": "Purwosari", "t": 1097728000, "r": 844423006}, {"n": "Rejosari", "t": 3401285000, "r": 2611288476}, {"n": "Rendeng", "t": 950500000, "r": 734761173}, {"n": "Sidorekso", "t": 2112800000, "r": 1586789219}, {"n": "Tanjungrejo", "t": 2430000000, "r": 1777427194}, {"n": "Undaan", "t": 3720000000, "r": 2668680490}, {"n": "Wergu Wetan", "t": 1030030000, "r": 768688024}], "pl": {"t": 800000000, "r": 843947000}, "prs": 224121793868, "pm": [3607066070, 3443624467, 3055465446, 3973742232, 2753536619, 4117037628, 4096710775, 3234952338, 4014442561], "sp": {"m": [8217653139, 8633953148, 32390106846, 16333292571, 18138811819, 27242477682, 23003202547, 16445548066, 21525617052], "n": 298, "j": {"LS": [191, 177696314995], "UP": [1, 1138200000], "GU": [106, 10010747613]}}};
+function render(D){['c1','c2','c3','c4','c5','c6'].forEach(i=>{const c=Chart.getChart(i);if(c)c.destroy()});
+const nf=new Intl.NumberFormat('id-ID',{maximumFractionDigits:1});
+const M=v=>Math.abs(v)>=1e12?nf.format(v/1e12)+' T':Math.abs(v)>=1e9?nf.format(v/1e9)+' M':nf.format(v/1e6)+' jt';
+const Rp=v=>'Rp '+M(v),Pc=v=>nf.format(v*100)+'%',pc=o=>o.p?o.r/o.p:0;
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+Chart.defaults.color=css('--mute');Chart.defaults.borderColor=css('--line');Chart.defaults.maintainAspectRatio=false;
+const A=css('--a'),B=css('--b'),Cr=css('--c'),PAL=['#0f766e','#2563eb','#d97706','#7c3aed','#db2777','#64748b','#16a34a'];
+const BL=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+const tl=c=>({callbacks:{label:x=>' '+x.dataset.label+': '+Rp(x.raw)}});
+const T=D.tot,mo=Array(12).fill(0);Object.values(D.mon).forEach(a=>a.forEach((v,i)=>mo[i]+=v));
+const cum=mo.reduce((a,v,i)=>(a.push((a[i-1]||0)+v),a),[]);
+const li=mo.reduce((a,v,i)=>v>0?i:a,0),run=(mo[li]+mo[li-1]+mo[li-2])/3,left=Math.max(1,11-li),need=T.s/left;document.querySelector('.hd .sub').textContent='Dinas Kesehatan, UPT Puskesmas, Labkesda & RSUD · Kab. Kudus · data realisasi s.d. '+['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'][li]+' 2026';
+const ent=[{n:'Dinas Kesehatan',p:D.dkk.reduce((a,o)=>a+o.p,0),r:D.dkk.reduce((a,o)=>a+o.r,0)},{n:'Puskesmas',p:D.pusk.reduce((a,o)=>a+o.p,0),r:D.pusk.reduce((a,o)=>a+o.r,0)},{n:'Labkesda',...D.lab},{n:'RSUD',...D.rs}];
+const pT=D.pend.reduce((a,o)=>a+o.t,0),pR=D.pend.reduce((a,o)=>a+o.r,0);
+const kp=[['Pagu Anggaran',Rp(T.p),'Seluruh sumber dana',1],['Realisasi',Rp(T.r),'Serapan '+Pc(pc(T)),pc(T)],['Sisa Pagu',Rp(T.s),Pc(1-pc(T))+' belum terserap',1-pc(T)],
+['Pendapatan Puskesmas',Rp(pR),Pc(pR/pT)+' dari target '+Rp(pT),pR/pT],['Realisasi JKN',Rp(D.jkn.reduce((a,o)=>a+o.r,0)),Pc(D.jkn.reduce((a,o)=>a+o.r,0)/D.jkn.reduce((a,o)=>a+o.p,0))+' dari pagu',D.jkn.reduce((a,o)=>a+o.r,0)/D.jkn.reduce((a,o)=>a+o.p,0)],['SP2D Terbit',D.sp.n+' dokumen',Rp(D.sp.m.reduce((a,v)=>a+v,0))+' total nilai',1]];
+document.getElementById('kpi').innerHTML=kp.map(k=>`<div class="card"><div class="kl">${k[0]}</div><div class="kv">${k[1]}</div><div class="sub">${k[2]}</div><div class="bar" style="margin-top:8px"><i style="width:${Math.min(100,k[3]*100)}%"></i></div></div>`).join('');
+const sp=[...D.src].sort((a,b)=>pc(a)-pc(b)),pk=[...D.pusk].sort((a,b)=>pc(a)-pc(b)),dk=[...D.dkk].sort((a,b)=>pc(a)-pc(b));
+document.getElementById('ins').innerHTML=[
+`Serapan total <b>${Pc(pc(T))}</b> (${Rp(T.r)} dari ${Rp(T.p)}). Rata-rata realisasi 3 bulan terakhir <b>${Rp(run)}/bulan</b>; sisa ${Rp(T.s)} perlu <b>${Rp(need)}/bulan</b> jika diserap dalam ${left} bulan (${nf.format(need/run)}× laju saat ini).`,
+`Sumber dana terendah: <b>${sp[0].n}</b> (${Pc(pc(sp[0]))}, sisa ${Rp(sp[0].s)}) dan <b>${sp[1].n}</b> (${Pc(pc(sp[1]))}, sisa ${Rp(sp[1].s)}). Tertinggi: ${sp[sp.length-1].n} (${Pc(pc(sp[sp.length-1]))}).`,
+`Puskesmas serapan terendah <b>${pk[0].n}</b> (${Pc(pc(pk[0]))}), tertinggi <b>${pk[pk.length-1].n}</b> (${Pc(pc(pk[pk.length-1]))}).`,
+`Bidang Dinkes serapan terendah <b>${dk[0].n}</b> (${Pc(pc(dk[0]))}), tertinggi <b>${dk[dk.length-1].n}</b> (${Pc(pc(dk[dk.length-1]))}).`,
+`Pendapatan Puskesmas ${Pc(pR/pT)} dari target; Labkesda <b>${Pc(D.pl.r/D.pl.t)}</b> (sudah melampaui target). Pendapatan RSUD tercatat ${Rp(D.prs)}.`].map(t=>`<li>${t}</li>`).join('');
+new Chart('c1',{type:'bar',data:{labels:D.src.map(o=>o.n+' ('+Pc(pc(o))+')'),datasets:[{label:'Pagu',data:D.src.map(o=>o.p),backgroundColor:'#94a3b855'},{label:'Realisasi',data:D.src.map(o=>o.r),backgroundColor:A}]},options:{indexAxis:'y',plugins:{tooltip:tl()},scales:{x:{ticks:{callback:M}}}}});
+new Chart('c2',{data:{labels:BL.slice(0,li+1),datasets:[...Object.entries(D.mon).map(([k,v],i)=>({type:'bar',label:k,data:v.slice(0,li+1),backgroundColor:PAL[i%7],stack:'s',yAxisID:'y'})),{type:'line',label:'Kumulatif',data:cum.slice(0,li+1),borderColor:Cr,backgroundColor:Cr,yAxisID:'y1',tension:.25}]},options:{plugins:{tooltip:tl()},scales:{x:{stacked:true},y:{stacked:true,ticks:{callback:M}},y1:{position:'right',grid:{display:false},ticks:{callback:M}}}}});
+new Chart('c3',{type:'doughnut',data:{labels:ent.map(o=>o.n),datasets:[{data:ent.map(o=>o.r),backgroundColor:PAL,borderWidth:0}]},options:{cutout:'58%',plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:x=>` ${x.label}: ${Rp(x.raw)} · serapan ${Pc(pc(ent[x.dataIndex]))}`}}}}});
+let c4;function draw(k){const a=(k=='pusk'?D.pusk:D.dkk).slice().sort((x,y)=>pc(y)-pc(x)),av=pc(k=='pusk'?ent[1]:ent[0]);if(c4)c4.destroy();
+c4=new Chart('c4',{type:'bar',data:{labels:a.map(o=>o.n),datasets:[{label:'% Serapan',data:a.map(pc),backgroundColor:a.map(o=>pc(o)<av?B:A)}]},options:{indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:x=>` ${Pc(x.raw)} · ${Rp(a[x.dataIndex].r)} dari ${Rp(a[x.dataIndex].p)}`}},title:{display:true,text:'Rata-rata '+Pc(av)+' · oranye = di bawah rata-rata'}},scales:{x:{min:0,max:1,ticks:{callback:v=>v*100+'%'}}}}})}
+draw('pusk');document.querySelectorAll('.tb button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tb button').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw(b.dataset.k)});
+new Chart('c5',{type:'bar',data:{labels:D.pend.map(o=>o.n),datasets:[{label:'Target',data:D.pend.map(o=>o.t),backgroundColor:'#94a3b866'},{label:'Realisasi',data:D.pend.map(o=>o.r),backgroundColor:PAL[1]}]},options:{indexAxis:'y',plugins:{tooltip:tl()},scales:{x:{ticks:{callback:M}}}}});
+document.getElementById('jkn').innerHTML=D.jkn.map(o=>`<div style="margin:8px 0 16px"><div style="display:flex;justify-content:space-between"><b>${o.n}</b><span>${Pc(pc(o))}</span></div><div class="bar" style="margin:6px 0"><i style="width:${pc(o)*100}%"></i></div><div class="sub">Realisasi ${Rp(o.r)} dari pagu ${Rp(o.p)} · sisa ${Rp(o.p-o.r)}</div></div>`).join('');
+document.getElementById('chips').innerHTML=Object.entries(D.sp.j).map(([k,v])=>`<span class="chip"><b>${k}</b> ${v[0]} dok · ${Rp(v[1])}</span>`).join('');
+new Chart('c6',{type:'bar',data:{labels:BL.slice(0,li+1),datasets:[{label:'Nilai SP2D',data:D.sp.m.slice(0,li+1),backgroundColor:PAL[3]}]},options:{plugins:{legend:{display:false},tooltip:tl()},scales:{y:{ticks:{callback:M}}}}});
+document.getElementById('spm').innerHTML='<tr><th>Layanan SPM</th><th class="n">Pagu</th><th class="n">Realisasi</th><th style="width:30%">Serapan</th></tr>'+D.spm.map(o=>`<tr><td>${o.n}</td><td class="n">${Rp(o.p)}</td><td class="n">${Rp(o.r)}</td><td><div style="display:flex;gap:8px;align-items:center"><div class="bar" style="flex:1"><i style="width:${Math.min(100,pc(o)*100)}%;background:${pc(o)<.5?B:A}"></i></div><span>${Pc(pc(o))}</span></div></td></tr>`).join('')+`<tr><td><b>Total SPM Utama + Penunjang</b></td><td class="n"><b>${Rp(D.spmtot.p)}</b></td><td class="n"><b>${Rp(D.spmtot.r)}</b></td><td><b>${Pc(pc(D.spmtot))}</b></td></tr>`;
+}
+render(D);
+const TT=s=>String(s).toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());
+function parse(wb){
+const S=n=>{const w=wb.Sheets[n];if(!w)throw Error('sheet "'+n+'" tidak ditemukan');return XLSX.utils.sheet_to_json(w,{header:1,defval:null,blankrows:true})};
+const R=S('REALISASI'),P=S('REAL. PEND. & PER SUMBER DANA'),Q=S('REG SP2D');
+const g=(r,c)=>+(R[r]&&R[r][c])||0,pg=(r,c)=>+(P[r]&&P[r][c])||0,sm=(r,a)=>a.reduce((t,c)=>t+g(r,c),0);
+const un=(i,x)=>({n:TT(String(R[i][2]).replace(x,'')),p:g(i,3),r:g(i,4)});
+const src=[];for(let i=5;i<13;i++)src.push({n:TT(R[i][2]),p:g(i,3),r:g(i,4),s:g(i,5)});
+const mon={};for(let i=17;i<28;i++){const k=R[i][7];if(k){mon[k]=mon[k]||Array(12).fill(0);for(let j=0;j<12;j++)mon[k][j]+=+R[i][8+j]||0}}
+const dkk=[];for(let i=40;i<51;i++){const o=un(i,'DINAS KESEHATAN - ');dkk.push(o.n.length<=6?{...o,n:o.n.toUpperCase()}:o)}
+const pusk=[];for(let i=52;i<71;i++)pusk.push(un(i,'UPT PUSKESMAS '));
+const spm=[];for(let i=79;i<91;i++)spm.push({n:R[i][2],p:g(i,12),r:g(i,21)});
+const pend=[];for(let i=2;i<21;i++)pend.push({n:TT(String(P[i][1]).replace('UPT PUSKESMAS ','')),t:pg(i,2),r:pg(i,3)});
+const m=Array(12).fill(0),j={};let n=0;
+for(const r of Q.slice(1)){if(r[2]&&typeof r[4]=='number'&&typeof r[1]=='number'){m[new Date(Math.round((r[1]-25569)*864e5)).getUTCMonth()]+=r[4];n++;const k=String(r[2]).split('/')[3];j[k]=j[k]||[0,0];j[k][0]++;j[k][1]+=r[4]}}
+const d={src,tot:{p:g(13,3),r:g(13,4),s:g(13,5)},mon,dkk,pusk,lab:un(72,''),rs:un(73,''),jkn:[{n:'Iuran PBPU & BP Kelas 3',p:sm(33,[3,4,5]),r:sm(33,[6,7,8])},{n:'Bantuan Iuran PBPU & BP Kelas 3',p:sm(34,[3,4,5]),r:sm(34,[6,7,8])}],spm,spmtot:{p:g(100,12),r:g(100,21)},pend,pl:{t:pg(23,2),r:pg(23,3)},prs:pg(24,3),sp:{m,n,j}};
+if(!(d.tot.p>0)||!pusk.length)throw Error('format file tidak sesuai template REALISASI');return d}
+const up=document.getElementById('up'),st=document.getElementById('st');
+async function load(f){if(!f)return;st.textContent='Membaca '+f.name+'…';
+try{const wb=XLSX.read(await f.arrayBuffer(),{type:'array',sheets:['REALISASI','REAL. PEND. & PER SUMBER DANA','REG SP2D']});render(parse(wb));st.textContent='Data dari: '+f.name+' · diperbarui '+new Date().toLocaleTimeString('id-ID')}
+catch(e){st.textContent='Gagal membaca file: '+e.message}}
+document.getElementById('ub').onclick=()=>up.click();up.onchange=()=>load(up.files[0]);
+addEventListener('dragover',e=>e.preventDefault());addEventListener('drop',e=>{e.preventDefault();load(e.dataTransfer.files[0])});
+</script></body></html>
